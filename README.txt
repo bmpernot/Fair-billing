@@ -6,7 +6,7 @@ compatiable with Python 2.7.17 on Ubuntu as tested.
 How to execute:
 enter the command line
 navigate to the same folder which the program and log file is in
-python "Fair_Billing.py" "(log file)"
+python "Fair_Billing.py" "log file"
 
 Assumptions:
 - The log will always be white space separated values
@@ -14,6 +14,7 @@ Assumptions:
 - Start and end time value are only set using the first and last valid log
 
 Testing:
+Black Box Testing:
 Test_1:
 The data that was given in the scenario.
 Expected outcome:
@@ -98,3 +99,10 @@ CHARLIE 6 818
 Actual outcome:
 ALICE99 9 950
 CHARLIE 6 818
+
+Unit Test:
+All unit tests that were created passed. However, the tests didn't 
+exhaust all possibilities due to some method being to complex as I 
+just learnt how to do unit testing in python for this exercise. 
+Addtionally, some unit test are more of an integration test as values 
+were not plugged in using @mock as i do not fully understand how this works.
